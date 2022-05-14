@@ -14,9 +14,9 @@ func main() {
 	str := "web serv"
 	num := 8081
 	res := fmt.Sprintf("Starting %s on port %d", str, num)
-	port := "localhost:8081"
+	addr := "localhost:8081"
 	fmt.Println(res)
 	http.HandleFunc("/", Handler)
-	log.Printf("Start websrv %s\n", port)
-	log.Fatal(http.ListenAndServe(port, nil))
+	log.Printf("Start websrv %s\n", addr)
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
