@@ -11,11 +11,11 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	str := "String"
-	num := 42
-	res := fmt.Sprintf("return %s +  %d", str, num)
-	port := ":8081"
-	fmt.Print(res)
+	str := "web serv"
+	num := 8081
+	res := fmt.Sprintf("Starting %s on port %d", str, num)
+	port := "localhost:8081"
+	fmt.Println(res)
 	http.HandleFunc("/", Handler)
 	log.Printf("Start websrv %s\n", port)
 	log.Fatal(http.ListenAndServe(port, nil))
