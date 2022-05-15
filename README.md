@@ -1,4 +1,2 @@
 # study
-
-
-Just repeating some GoLang expamples from youtube videos :)
+Just repeating some GoLang examples from YouTube videos :)
