@@ -67,5 +67,4 @@ func main() {
 	fmt.Println(p)
 	v.movePointPtr(3, 5)
 	fmt.Println(p)
-
 }
